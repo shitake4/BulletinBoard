@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+  version="2.4">
+
+
+  <servlet>
+  	<servlet-name>ThController</servlet-name>
+  	<servlet-class>BulletinBoard.Controller.ThreadController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ThController</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+ 	<servlet-name>ResController</servlet-name>
+ 	<servlet-class>BulletinBoard.Controller.ResController</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>ResController</servlet-name>
+ 	<url-pattern>/thread</url-pattern>
+ </servlet-mapping>
+</web-app>
